@@ -10,7 +10,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   String sampleText = 'Sample Text';
-  TextStyle sampleTextStyle = TextStyle(color: Colors.white, fontSize: 28);
+  TextStyle sampleTextStyle = TextStyle(color: Colors.black, fontSize: 28);
 
   @override
   Widget build(BuildContext context) {
@@ -21,8 +21,8 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Stack(
         fit: StackFit.expand,
         children: [
-          Image.network(
-            'https://img.freepik.com/premium-psd/floral-rosy-golden-frame-design_53876-156711.jpg',
+          Image.asset(
+            'assets/sample.jpg',
             fit: BoxFit.cover,
           ),
           Center(
@@ -45,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 }
               },
               child: DottedBorder(
-                color: Colors.white,
+                color: Colors.black,
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
